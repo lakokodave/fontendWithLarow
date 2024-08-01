@@ -20,9 +20,9 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>LakokoDave cloths</h1>
+        <h1>LakokoDave cars</h1>
         <h3>
-          <i>Order your LakokoDave cloths </i>
+          <i>Order your Cars</i>
         </h3>
         <br />
         <div className="container">
@@ -38,24 +38,24 @@ function App() {
           <input
             type="text"
             className="input"
-            placeholder="cloths flavor"
+            placeholder="we can make any cars of your couse"
             value={flavor}
             onChange={(e) => setFlavor(e.target.value)}
           />
           <input
             type="text"
             className="input"
-            placeholder="cloths size"
+            placeholder="cars type"
             value={size}
             onChange={(e) => setSize(e.target.value)}
           />
         </div>
         <br /> <br />
         <button onClick={sendMessageToContract} className="button">
-          Place your cloths Order
+          Place your cars Order
         </button>
         <button onClick={getMessageToContract} className="button">
-          get your cake Order
+          get your cars Order
         </button>
       </div>
       <div className="container">
@@ -64,9 +64,9 @@ function App() {
         ) : (
           <div className="result">
             <ol>
-              <li>cloths Color: {cakeDetails.color}</li>
-              <li>cloths Flavor: {cakeDetails.flavor}</li>
-              <li>cloths Size: {cakeDetails.size}</li>
+              <li>car name: {cakeDetails.color}</li>
+              <li>car color: {cakeDetails.flavor}</li>
+              <li>car size: {cakeDetails.size}</li>
             </ol>
           </div>
         )}
