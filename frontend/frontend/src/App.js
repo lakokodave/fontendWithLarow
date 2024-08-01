@@ -29,7 +29,7 @@ function App() {
           <input
             type="text"
             className="input"
-            placeholder="cloths color"
+            placeholder="cars Name"
             value={color}
             onChange={(e) => {
               setColor(e.target.value);
@@ -60,7 +60,7 @@ function App() {
       </div>
       <div className="container">
         {cakeDetails === null ? (
-          <div className="result">No Orders Yet</div>
+          <div className="result">why have you not order yet</div>
         ) : (
           <div className="result">
             <ol>
